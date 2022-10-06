@@ -6,3 +6,10 @@ Les 3 commandes pour faire un push sont
   - la commande : git push 'url_repo' (cette commande permet d'envoyer les modifications enregistrer par git sur n'importe quelle repo qu'on veut)
   
 La commande qui permet de pull est git pull 'url_repo'
+
+La commande qui permet de créer une nouvelle branche est : git branc 'nom_branche'
+
+La commande qui permet de changer de branche est : git checkout 'nom_branche'
+
+Cependant il existe une commande permettant de créer une nouvelle branche et de se mettre sur cette dernière directement.
+Cette commande est : git checkout -b 'nom_branche'
