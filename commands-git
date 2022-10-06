@@ -4,3 +4,5 @@ Les 3 commandes pour faire un push sont
   - la commande : git add 'non_fichier' (cette dernière permet de sauvegarde le fichier dans git)
   - la commande : git commit -m 'commentaire' (cette dernière permet de confirmer la sauvegarde en ajoutant le massage qu'on veut)
   - la commande : git push 'url_repo' (cette commande permet d'envoyer les modifications enregistrer par git sur n'importe quelle repo qu'on veut)
+  
+La commande qui permet de pull est git pull 'url_repo'
