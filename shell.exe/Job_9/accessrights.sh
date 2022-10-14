@@ -15,6 +15,10 @@ cat /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist_original.csv | while read
 	do
 	sudo userdel $Prenom-$Nom
 	sudo groupdel $Prenom-$Nom
+	done
+	
+cat /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist.csv | while read Id Prenom Nom Mdp Role	
+	do
 	sudo useradd $Prenom-$Nom
         echo "$Prenom-$Nom:$Mdp" | sudo chpasswd
         sudo usermod -u $Id "$Prenom-$Nom"
@@ -23,4 +27,3 @@ cat /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist_original.csv | while read
                 sudo usermod -aG sudo "$Prenom-$Nom"
                 fi
         done
-
