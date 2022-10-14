@@ -9,11 +9,10 @@
   
 if diff /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist.csv /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist_original.csv 
 	then
-		echo "R.A.S"		
+		exit		
 	else 
 		rm /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist_original.csv
 		cp /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist.csv /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist_original.csv
 		chmod 666 /home/jerome/GitHub/shell.exe/Job_9/Shell_Userlist_original.csv
 		../home/jerome/GitHub/shell.exe/Job_9/accessrights.sh
-		echo "diff"
 fi
